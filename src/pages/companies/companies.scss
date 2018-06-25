@@ -1,0 +1,9 @@
+page-companies {
+    .center{
+        margin: 25px auto;
+    }
+    ion-list{
+        display: flex;
+        flex-direction: column;
+    }
+}

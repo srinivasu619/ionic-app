@@ -1,0 +1,87 @@
+<!--
+  Generated template for the EditStudentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit Student Information</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="studentForm" (ngSubmit)="sendDetails()">
+    <ion-item>
+      <ion-label stacked>First Name</ion-label>
+      <ion-input type="text" formControlName="firstName" value="{{ student.firstName }}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="studentForm.controls['firstName'].touched && studentForm.controls['firstName'].value.length == 0">Field is Required</div>
+      <div class="alert" *ngIf="!studentForm.controls['firstName'].valid && studentForm.controls['firstName'].touched && studentForm.controls['firstName'].value.length != 0">Invalid Input</div>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Last Name</ion-label>
+      <ion-input type="text" formControlName="lastName" value="{{ student.lastName }}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="studentForm.controls['lastName'].touched && studentForm.controls['lastName'].value.length == 0">Field is Required</div>
+      <div class="alert" *ngIf="!studentForm.controls['lastName'].valid && studentForm.controls['lastName'].touched && studentForm.controls['lastName'].value.length != 0">Invalid Input</div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Department</ion-label>
+      <!-- <ion-input type="text" formControlName="department"></ion-input> -->
+      <ion-select formControlName="department">
+        <ion-option value="Computer Science Engineering">Computer Science Engineering</ion-option>
+        <ion-option value="Information Technology">Information Technology</ion-option>
+        <ion-option value="Electronics Communication Engineering">Electronics Communication Engineering</ion-option>
+        <ion-option value="Electrical Electronics Engineering">Electrical Electronics Engineering</ion-option>
+        <ion-option value="Instrumental Computation Engineering">Instrumental Computation Engineering</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="!studentForm.controls['department'].valid && studentForm.controls['department'].touched">Field is Required or Invalid Input</div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Enrollment Number</ion-label>
+      <ion-input type="text" formControlName="enrollmentNo" value="{{ student.enrollmentNo }}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="studentForm.controls['enrollmentNo'].touched && studentForm.controls['enrollmentNo'].value.length == 0">Field is Required</div>
+      <div class="alert" *ngIf="!studentForm.controls['enrollmentNo'].valid && studentForm.controls['enrollmentNo'].touched && studentForm.controls['enrollmentNo'].value.length != 0">Invalid Input</div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CGPA</ion-label>
+      <ion-input type="number" formControlName="cgpa" step=".1" value="{{ student.cgpa }}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="studentForm.controls['cgpa'].touched && studentForm.controls['cgpa'].value.length == 0">Field is Required</div>
+      <div class="alert" *ngIf="!studentForm.controls['cgpa'].valid && studentForm.controls['cgpa'].touched && studentForm.controls['cgpa'].value.length != 0">Invalid Input</div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Permanent Address</ion-label>
+      <ion-textarea formControlName="permanentAddress" value="{{ student.permanentAddress }}"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="studentForm.controls['permanentAddress'].touched && studentForm.controls['permanentAddress'].value.length == 0">Field is Required</div>
+      <div class="alert" *ngIf="!studentForm.controls['permanentAddress'].valid && studentForm.controls['permanentAddress'].touched && studentForm.controls['permanentAddress'].value.length != 0">Invalid Input</div>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>E-Mail</ion-label>
+      <ion-input type="email" formControlName="email" value="{{ student.email }}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <div class="alert" *ngIf="studentForm.controls['email'].touched && studentForm.controls['email'].value.length == 0">Field is Required</div>
+      <div class="alert" *ngIf="!studentForm.controls['email'].valid && studentForm.controls['email'].touched && studentForm.controls['email'].value.length != 0">Invalid Input</div>
+    </ion-item>
+    <button ion-button type="submit" [disabled]="!studentForm.valid">Submit</button>
+  </form>
+</ion-content>

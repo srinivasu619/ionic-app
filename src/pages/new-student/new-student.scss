@@ -1,0 +1,30 @@
+page-new-student {
+    form{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ion-input,ion-select,ion-textarea{
+        border: 1px solid;
+        padding: 4px;
+    }
+    .alert {
+        background: #fab1a0;
+        padding: 7px;
+        font-size: .9em;
+        display: inline-block;
+        color: #c0392b;
+        // animation: 2s alertAnim forwards;
+    }
+    // @keyframes alertAnim {
+    //     from {
+    //         opacity:0;
+    //         transform: translateY(-10px);
+    //     }
+    //     to {
+    //         opacity:1;
+    //         transform: translateY(0);
+    //     }
+    // }
+}

@@ -1,0 +1,16 @@
+page-placement-registeration {
+    .vcenter{
+        display: flex;
+        align-items: center;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .company{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

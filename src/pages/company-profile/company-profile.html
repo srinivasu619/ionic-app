@@ -1,0 +1,27 @@
+ <ion-header>
+
+  <ion-navbar>
+    <ion-title>Company Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="profile vcenter">
+        <div class="avatar center"> {{ company.name[0] }}</div>
+        <div class="name">{{ company.name }}</div>
+        <div class="email">{{ company.email }}</div>
+        <div class="vcenter">
+          <button ion-button color="danger" class="center" (click)="deleteCompany()">UNREGISTER</button>
+        </div>
+        <div class="dlabel">JOB DESIGNATION</div>
+        <div class="dvalue">{{ company.jobDesignation }}</div>
+        <div class="dlabel">CONTACT</div>
+        <div class="dvalue">{{ company.contact }}</div>
+        <div class="dlabel">CUTOFF</div>
+        <div class="dvalue">{{ company.cutoff }}</div>
+        <div class="dlabel">PERMANENT ADDRESS</div>
+        <div class="dvalue">{{ company.permanentAddress}}</div>
+      </div>
+</ion-content>

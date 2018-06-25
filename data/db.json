@@ -1,0 +1,55 @@
+{
+  "students": [
+      {
+      "firstName": "SRINIVASU",
+      "lastName": "KOTLA",
+      "department": "INFORMATION TECHNOLOGY",
+      "enrollmentNo": "02711503114",
+      "cgpa": 9,
+      "permanentAddress": "C-25,B-Lane,Z,India",
+      "email": "srinivasu@gmail.com",
+      "__v": 0
+    },
+    {
+      "firstName": "VISHAL",
+      "lastName": "AGGARWAL",
+      "department": "INFORMATION TECHNOLOGY",
+      "enrollmentNo": "01111503114",
+      "cgpa": 7.8,
+      "permanentAddress": "D-25,C-Lane,Y,India",
+      "email": "vishal@gmail.com",
+      "__v": 0
+    },
+    {
+      "firstName": "PALLAV",
+      "lastName": "SAXENA",
+      "department": "INFORMATION TECHNOLOGY",
+      "enrollmentNo": "02111503114",
+      "cgpa": 9.4,
+      "permanentAddress": "D-25,B-Lane,X,India",
+      "email": "pallav@gmail.com",
+      "__v": 0
+    }
+  ],
+  "companies":[
+    {
+      "students": [{
+        "firstName": "PALLAV",
+        "lastName": "SAXENA",
+        "department": "INFORMATION TECHNOLOGY",
+        "enrollmentNo": "02111503114",
+        "cgpa": 9.4,
+        "permanentAddress": "D-25,B-Lane,X,India",
+        "email": "pallav@gmail.com",
+        "__v": 0
+      }],
+      "name": "XYZ PRIVATE LIMITED",
+      "jobDesignation": "Software Developer",
+      "cutoff": 8,
+      "contact": 22222233,
+      "permanentAddress": "X-9,Y-Lane,Zcity,India",
+      "email": "contact@xyz.com",
+      "__v": 0
+    }
+  ]
+}
