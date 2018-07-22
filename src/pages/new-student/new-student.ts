@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormBuilder,FormGroup,Validators,AbstractControl} from '@angular/forms'
 import { ApiProvider } from './../../providers/api/api';
 import { HttpClient, HttpHeaders,HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpHeaders,HttpResponse }from '@angular/common/http'
 /**
  * Generated class for the NewStudentPage page.
  *

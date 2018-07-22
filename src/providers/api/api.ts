@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ApiProvider {
   public data: any;
-
+  private url: string = "https://morning-bayou-56304.herokuapp.com";
   constructor(public http: HttpClient) {
     console.log('Hello ApiProvider Provider');
   }
